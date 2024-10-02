@@ -49,7 +49,8 @@ header nav ul li a:hover {
 /* Main Content Style */
 main {
     display: flex;
-    justify-content: center;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
     margin: 20px; /* Adjust margin above and below */
 }
 
@@ -64,12 +65,17 @@ main p {
     margin-bottom: 20px;
 }
 
+.text-content {
+    max-width: 600px; /* Set a max width for the text */
+    text-align: center; /* Center the text */
+    margin-bottom: 20px; /* Add space below the text */
+
 /* Footer Style */
 footer {
     background-color: #333333; /* Way darker than before gray footer background */
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
     position: relative;
     width: 100%;
     bottom: 0;
@@ -81,13 +87,12 @@ footer p {
 
 /* Style for image container */
 .image-container {
-    text-align: center;
+    margin: 20px 0; /* Add margin above and below the image */
 }
 
 .image-container img {
     max-width: 100%;
     height: auto;
-    display: block; /* Remove extra space below the image */
     border-radius: 10px; /* Rounded corners */
 }
 

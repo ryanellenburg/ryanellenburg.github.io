@@ -69,6 +69,7 @@ main p {
     max-width: 600px; /* Set a max width for the text */
     text-align: center; /* Center the text */
     margin-bottom: 20px; /* Add space below the text */
+}
 
 /* Footer Style */
 footer {

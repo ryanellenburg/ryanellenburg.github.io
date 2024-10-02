@@ -50,8 +50,7 @@ header nav ul li a:hover {
 main {
     display: flex;
     justify-content: center;
-    align-items: center;
-    min-height: 60vh; /* Adjust height to center content vertically */
+    margin: 20px; /* Adjust margin above and below */
 }
 
 main h2 {
@@ -88,7 +87,8 @@ footer p {
 .image-container img {
     max-width: 100%;
     height: auto;
-    border-radius: 10px;
+    display: block; /* Remove extra space below the image */
+    border-radius: 10px; /* Rounded corners */
 }
 
 /* Responsive Style */

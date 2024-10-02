@@ -59,6 +59,11 @@ main h2 {
     margin-bottom: 15px;
 }
 
+main h3 {
+    font-size: 1.5rem; /* Set the font size for h3 */
+    margin-bottom: 10px; /* Add space below the h3 */
+}
+
 main p {
     font-size: 1.1rem;
     line-height: 1.8;

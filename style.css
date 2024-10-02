@@ -46,6 +46,16 @@ header nav ul li a:hover {
     border-radius: 5px;
 }
 
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: none; /* Keep it without an underline on hover */
+    color: #ddd; /* Change color on hover (adjust as needed) */
+}
+
 /* Main Content Style */
 main {
     display: flex;

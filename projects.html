@@ -1,22 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        function loadHeaderFooter()
+        {
+            fetch("header.html") // Load Header
+                .then(response => response.text())
+                .then(data =>
+                {
+                    document.querySelector("header").innerHTML = data;
+                });
+            fetch("footer.html") // Load Footer
+                .then(response => response.text())
+                .then(data =>
+                {
+                    document.querySelector("footer").innerHTML = data;
+                });
+        }
+    </script>
 </head>
-<body>
-    <header>
-        <h1>Projects</h1>
-        <nav>
-            <ul>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    
+<body onload="loadHeaderFooter()">
+    <header></header>
 
     <main>
         <h2>My Projects</h2>
@@ -28,8 +38,8 @@
         </ul>
     </main>
 
-    <footer>
-        <p>&copy; 2024 Ryan Ellenburg. All Rights Reserved.</p>
-    </footer>
+    <footer></footer>
+    
 </body>
+    
 </html>

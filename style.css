@@ -49,6 +49,7 @@ header nav ul li a:hover {
 header a {
     color: white;
     text-decoration: none;
+    transition: text-decoration 0.3s ease;
 }
 
 header a:hover {

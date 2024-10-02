@@ -8,14 +8,14 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #c2c2c2;
+    background-color: #c2c2c2; /* Light gray background */
     color: #333;
     padding: 20px;
 }
 
 /* Header Style */
 header {
-    background-color: #6b6b6b;
+    background-color: #6b6b6b; /* Dark gray background */
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -42,7 +42,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    background-color: #5e5e5e;
+    background-color: #5e5e5e; /* Even darker gray background link hover */
     border-radius: 5px;
 }
 
@@ -64,7 +64,7 @@ main p {
 
 /* Footer Style */
 footer {
-    background-color: #333;
+    background-color: #333333; /* Way darker than before gray footer background */
     color: white;
     text-align: center;
     padding: 10px 0;

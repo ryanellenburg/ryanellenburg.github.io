@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function loadHeaderFooter()
+        {
+            fetch("header.html") // Load Header
+                .then(response => response.text())
+                .then(data =>
+                {
+                    document.querySelector("header").innerHTML = data;
+                });
+            fetch("footer.html") // Load Footer
+                .then(response => response.text())
+                .then(data =>
+                {
+                    document.querySelector("footer").innerHTML = data;
+                });
+        }
+    </script>
+</head>
+    
+<body onload="loadHeaderFooter()">
+    
+    <header></header>
+
+    <main>
+        <h2>FAQ</h2>
+        <h3>Why is your page so... unsophisticated?</h3>
+        <p>Couple reasons. First, I'm not much of a narcissist, but I was required to make a home page to bring attention to myself (coding training project). Requirement was without the use of web design software. Also, having the luxury of saying I went to Georgia Tech in a previous millennium, we learned HTML long before the days of WordPress, Webflow and Elementor. While I like making modern pages and apps, I'm good with this one sticking to my OG roots.</p>
+        <h3>Lorem ipsum?</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <h3>Lorem ipsum?</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <h3>Lorem ipsum?</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <h3>Lorem ipsum?</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </main>
+
+    <footer></footer>
+    
+</body>
+    
+</html>

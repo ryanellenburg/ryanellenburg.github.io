@@ -97,6 +97,17 @@ footer p {
     border-radius: 10px; /* Rounded corners */
 }
 
+/* Hyperlink Style */
+a {
+    color: inherit; /* Same color as the rest of the text */
+    text-decoration: none; /* Remove the underline */
+    transition: text-decoration 0.3s ease; /* Smooth transition for the underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Add an underline on hover */
+}
+
 /* Responsive Style */
 @media (max-width: 768px) {
     header h1 {
